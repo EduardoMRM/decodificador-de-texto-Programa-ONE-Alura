@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+
+    <title>Decodificador de Texto</title>
+</head>
+<body>
+    <main>
+        <section class="area-criptografia">
+            <div class="area-criptografia__aviso">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+                  </svg> <p>Apenas letras minúsculas e sem acento</p>
+            </div>
+            <textarea id="textInput" name="" class="area-criptografia__texto" placeholder="Digite a frase para codificar ou descodificar"></textarea>
+            <div class="area-criptografia__botoes">
+                <button id="criptografar" class="botoes__criptografar" onclick="criptografar()">Criptografar</button>
+                <button id="descriptografar" class="botoes__descriptografar" onclick="descriptografar()">Descriptografar</button>
+            </div>
+        </section>
+        <section class="area-resultado">
+            <textarea id="resultado" placeholder="AQUI FICARA O RESULTADO" class="area-resultado__texto" readonly></textarea>
+            <button id="copiar" class="area-resultado__copiar" onclick="copiar()">Copiar</button>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por <strong>Eduardo Miguel</strong></p>
+        <div class="links">
+            <a href="https://github.com/EduardoMRM" target="_blank"><img src="/assets/github.png" alt="simbolo github"> github</a>
+            <a href="https://www.linkedin.com/in/eduardo-de-mendon%C3%A7a-desenvolvedor/" target="_blank"><img src="/assets/linkedin.png" alt="simbolo linkedin"> linkedin</a>
+        </div>
+    </footer>
+
+    <script src="./js/app.js" defer></script>
+</body>
+</html>

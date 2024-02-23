@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+:root {
+    --cor--principal: #087880;
+    --cor--secundaria: #ececec;
+    --terceira--cor: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor--secundaria);
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    margin: 1%;
+}
+
+.area-criptografia__aviso {
+    display: flex;
+    gap: 10px;
+    color: #000000;
+}
+
+.area-criptografia {
+    display: flex;
+    width: 50%;
+    padding: 45px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.area-criptografia__texto {
+    width: 100%;
+    font-size: 16px;
+    resize: none;
+    height: 600px;
+    background-color: var(--cor--secundaria);
+    border: var(--cor--secundaria);
+    color: #000000;
+}
+
+.area-criptografia__texto:focus {
+    outline: 0;
+}
+
+button {
+    border-radius: 10px;
+    height: 70px;
+    width: 328px;
+    border: none;
+    padding: 3px;
+    cursor: pointer;
+    font-weight: 400px;
+    font-size: 18px;
+}
+
+.area-criptografia__botoes {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.botoes__criptografar {
+    color: var(--terceira--cor);
+    background-color: var(--cor--principal);
+}
+
+.botoes__descriptografar {
+    background-color: var(--terceira--cor);
+    color: var(--cor--principal);
+}
+
+.area-resultado {
+    display: flex;
+    border: solid 1px #ffffffc7;
+    box-shadow: 0.5px 0px 5px 1px #5f5f5f8a;
+    background-color: #e6e4e4;
+    border-radius: 30px;
+    height: 100%;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.area-resultado__texto {
+    font-size: 16px;
+    width: 60%;
+    height: 50%;
+    resize: none;
+    background-color: #e6e4e4;
+    border: var(--cor--secundaria);
+    color: #000000;
+    margin-top: 15%;
+}
+
+.area-resultado__texto:focus {
+    outline: none;
+}
+
+.area-resultado__copiar {
+    margin-bottom: 13%;
+    color: var(--cor--principal);
+}
+
+.rodape {
+    color: var(--terceira--cor);
+    padding: 13px;
+    background-color: var(--cor--principal);
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-around;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+a {
+    color: var(--terceira--cor);
+    text-decoration: none;
+}
+
+@media (max-width: 1170px) {
+    main {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .area-criptografia {
+        height: auto;
+        width: auto;
+    }
+
+    .area-criptografia__texto {
+        height: 40%;
+    }
+
+    .area-resultado {
+        justify-content: center;
+        height: 40%;
+        gap: 30px;
+        width: auto;
+    }
+}
